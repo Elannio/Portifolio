@@ -267,10 +267,10 @@ section{
 .details-container{
     padding: 1.5rem;
     flex: 1;
-    background: #fff;
+    background: #d3ffd1;
     border-radius: 2rem;
     border:#000000;
-    border-color:#fff;
+    border-color:#d3ffd1;
     text-align: center;
 }
 
@@ -310,4 +310,49 @@ section{
 
 .about-container, .about-details-container{
     display: flex;
+}
+
+/*Contact */
+
+#contact{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 5rem;
+    border: var(--main-color);
+    border-color: var(--main-color);
+    background: #d3ffd1;
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-icon{
+    cursor: default;
+}
+
+.contact-info-container p a {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #000000;
+    text-decoration: none; 
+}
+
+.contact-info-container p a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
 }
