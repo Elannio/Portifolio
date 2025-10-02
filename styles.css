@@ -312,6 +312,31 @@ section{
     display: flex;
 }
 
+@media (max-width: 1024px) {
+  .about-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .details-container {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .details-container {
+    width: 90%;
+    margin-bottom: 1.5rem;
+  }
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /*Contact */
 
 #contact{
@@ -327,7 +352,7 @@ section{
     border-radius: 5rem;
     border: var(--main-color);
     border-color: var(--main-color);
-    background: #d3ffd1;
+    background: #242424;
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -348,7 +373,7 @@ section{
     font-size: 2rem;
     font-weight: 500;
     line-height: 1.8;
-    color: #000000;
+    color: var(--text-color);
     text-decoration: none; 
 }
 
